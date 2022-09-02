@@ -54,7 +54,7 @@
     },
     "config": {
         "optimize-autoloader": true,
-        "preferred-install": "public",
+        "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
