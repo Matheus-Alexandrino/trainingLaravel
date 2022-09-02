@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SeriesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,19 +14,5 @@ use App\Http\Controllers\SeriesController;
 */
 
 Route::get('/', function () {
-    return view('layouts.home');
-});
-
-Route::get('/series', [SeriesController::class, 'index']);
-Route::get('/series/criar', [SeriesController::class, 'create']);
-Route::get('/series/delete', [SeriesController::class, 'delete']);
-Route::post('/series/salvar', [SeriesController::class, 'store']);
-
-// require __DIR__ . 'auth.php';
-
-
-Route::get('/api/series', function (){
-    return [
-        'Grey\s Anatomy'
-    ];
+    return view('welcome');
 });
