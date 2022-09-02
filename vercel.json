@@ -1,7 +1,8 @@
+
 {
     "version": 2,
     "functions": {
-        "api/index.php": { "runtime": "{{vercel-php@0.4.0}}" }
+        "api/index.php": { "runtime": "vercel-php@0.4.0" }
     },
     "routes": [{
         "src": "/(.*)",
@@ -10,7 +11,8 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "{{ appUrl }}",
+        "APP_URL": "https://vercel.com/matheus-alexandrino/traininglaravel/5afQBLrDQ7voYfyFJt69CzacmLBV",
+
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
